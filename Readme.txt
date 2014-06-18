@@ -1,9 +1,7 @@
-PlaylistManager
-===============
+﻿This borrows heavily from this project:
+http://www.codeproject.com/Articles/17266/Drag-and-Drop-Items-in-a-WPF-ListView
 
-A playlist manager for Satechi and TomTom satnav devices
-
-A win32 binary is available in the zip file, just unzip the two files and run (Requires the .NET4 runtime).
+Please excuse the code quality - it's a quick utility I'd knocked up.
 
 The primary usage is for getting songs on to Satechi devices,
 so that they play as per the order set.
@@ -30,3 +28,9 @@ Note that simple .m3u playlists are just the .pla playlists renamed with .m3u
 
 I've had to create this utility, as the Satechi devices read the songs in the order they were COPIED to the card,
 changing creation / modified / track number / name / album does not work.
+
+
+
+This project and associated files are under the GPL3+ licence.
+
+Alexis Read, Copyright 18/6/14.
