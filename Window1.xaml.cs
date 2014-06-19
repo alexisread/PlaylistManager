@@ -252,10 +252,13 @@ namespace PlaylistManager
             }
 
             // Add on unreferenced files at the end of the playlist
-            foreach (Song s in songs)
+            if (this.addAllAvailableFiles.IsChecked == true)
             {
-                if (!playlist.Any(x => x.Name == s.Name))
-                    playlist.Add(new Song(s.Name, s.Path, SongAvailability.MissingFromPlaylist));
+                foreach (Song s in songs)
+                {
+                    if (!playlist.Any(x => x.Name == s.Name))
+                        playlist.Add(new Song(s.Name, s.Path, SongAvailability.MissingFromPlaylist));
+                }
             }
 
             // Replace filelist

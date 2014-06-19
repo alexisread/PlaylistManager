@@ -12,6 +12,7 @@ To use it, select the folder where your songs are and press scan.
 The manager will search through all nested folders to provide a list of available
 songs, ordered by creation date.
 You can then load a playlist if you choose, to order the list of songs (simple .m3u and .pla supported).
+If the add-all-files checkbox is ticked, then any files in the folder which are not on the playlist, are added at the end (flagged orange).
 Red songs are where the song (mp3) is missing.
 Orange songs are where the song (mp3) is there, but not specified in the playlist.
 You can remove songs from the new playlist by pressing remove 

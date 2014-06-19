@@ -204,6 +204,9 @@
         <TextBlock TextWrapping="Wrap" Width="75" Height="150">Red entries are missing files. <LineBreak/>Orange are files not on the playlist.</TextBlock>
         <Button Content="Move Up" Height="23" Name="moveUp" Width="75" Grid.Row="3"/>
         <Button Content="Move Down" Height="23" Name="moveDown" Width="75" Grid.Row="3"/>
+        <TextBlock TextWrapping="Wrap" Width="75" Margin="0,10,0,0">Add all files to playlist on import</TextBlock>
+        <CheckBox Name="addAllAvailableFiles" IsChecked="False"
+                  ToolTip="On playlist import, any extra files in the source folder are added to the end of the playlist" />
       </StackPanel>
     </StackPanel>
 
